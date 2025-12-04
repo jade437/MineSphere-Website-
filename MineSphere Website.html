@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MineSphere - Revolutionizing Mining Safety</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+    
+    .gradient-bg {
+      background: linear-gradient(135deg, #1e3a8a 0%, #334155 100%);
+    }
+    
+    .feature-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+    
+    .cta-button {
+      transition: all 0.3s ease;
+    }
+    
+    .cta-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(34, 197, 94, 0.4);
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="w-full">
+  <div class="w-full min-h-full" id="main-wrapper"><!-- Header -->
+   <header class="w-full gradient-bg text-white py-4 px-6 shadow-lg">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+     <div class="flex items-center gap-3"><!-- Logo with Construction Cap -->
+      <svg width="50" height="50" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><!-- Construction Hard Hat --> <ellipse cx="50" cy="75" rx="35" ry="8" fill="#fbbf24" opacity="0.3" /> <path d="M 25 60 Q 25 35 50 30 Q 75 35 75 60 L 70 65 Q 70 45 50 40 Q 30 45 30 65 Z" fill="#fbbf24" /> <rect x="20" y="60" width="60" height="8" rx="2" fill="#f59e0b" /> <rect x="48" y="30" width="4" height="8" fill="#78350f" /> <!-- Network Nodes --> <circle cx="35" cy="50" r="4" fill="#22c55e" /> <circle cx="50" cy="45" r="4" fill="#22c55e" /> <circle cx="65" cy="50" r="4" fill="#22c55e" /> <!-- Connection Lines --> <line x1="35" y1="50" x2="50" y2="45" stroke="#60a5fa" stroke-width="2" /> <line x1="50" y1="45" x2="65" y2="50" stroke="#60a5fa" stroke-width="2" />
+      </svg>
+      <div>
+       <h1 class="text-2xl font-bold" id="brand-name">MineSphere</h1>
+       <p class="text-sm opacity-90" id="tagline">Revolutionizing Mining Safety</p>
+      </div>
+     </div>
+     <nav class="hidden md:flex gap-6"><a href="#features" class="hover:text-green-400 transition-colors">Features</a> <a href="#about" class="hover:text-green-400 transition-colors">About</a> <a href="#contact" class="hover:text-green-400 transition-colors">Contact</a>
+     </nav>
+    </div>
+   </header><!-- Hero Section -->
+   <section class="w-full gradient-bg text-white py-20 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+     <h2 class="text-5xl font-bold mb-6" id="hero-title">Your Partner in Safety and Efficiency</h2>
+     <p class="text-xl mb-8 opacity-90" id="hero-subtitle">Real-time IoT monitoring that transforms mining operations with comprehensive safety insights</p><button class="cta-button bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg text-lg"> <span id="cta-text">Get Started Today</span> </button>
+    </div>
+   </section><!-- Key Messages -->
+   <section class="w-full bg-white py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+     <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-center p-6">
+       <div class="text-green-500 text-5xl mb-4">
+        ⚠️
+       </div>
+       <h3 class="text-xl font-bold mb-3 text-gray-800">Stay Ahead of Hazards</h3>
+       <p class="text-gray-600">Real-time alerts keep your team safe with instant hazard detection</p>
+      </div>
+      <div class="text-center p-6">
+       <div class="text-blue-600 text-5xl mb-4">
+        📊
+       </div>
+       <h3 class="text-xl font-bold mb-3 text-gray-800">Optimize Operations</h3>
+       <p class="text-gray-600">Smart insights drive efficiency and reduce operational costs</p>
+      </div>
+      <div class="text-center p-6">
+       <div class="text-amber-600 text-5xl mb-4">
+        ✓
+       </div>
+       <h3 class="text-xl font-bold mb-3 text-gray-800">Ensure Compliance</h3>
+       <p class="text-gray-600">Cutting-edge technology meets all safety regulations</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Features Section -->
+   <section id="features" class="w-full bg-gray-50 py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+     <h2 class="text-4xl font-bold text-center mb-12 text-gray-800" id="features-title">Comprehensive Safety Solutions</h2>
+     <div class="grid md:grid-cols-2 gap-8">
+      <div class="feature-card bg-white p-8 rounded-lg shadow-lg">
+       <h3 class="text-2xl font-bold mb-4 text-blue-900">Real-Time Monitoring</h3>
+       <p class="text-gray-700 mb-4">Advanced IoT sensors provide 24/7 monitoring of environmental conditions, equipment status, and personnel safety.</p>
+       <ul class="space-y-2 text-gray-600">
+        <li>✓ Gas detection and air quality monitoring</li>
+        <li>✓ Equipment performance tracking</li>
+        <li>✓ Worker location and safety status</li>
+       </ul>
+      </div>
+      <div class="feature-card bg-white p-8 rounded-lg shadow-lg">
+       <h3 class="text-2xl font-bold mb-4 text-blue-900">Instant Alerts</h3>
+       <p class="text-gray-700 mb-4">Receive immediate notifications when hazardous conditions are detected, enabling rapid response.</p>
+       <ul class="space-y-2 text-gray-600">
+        <li>✓ Multi-channel alert system</li>
+        <li>✓ Customizable thresholds</li>
+        <li>✓ Automated emergency protocols</li>
+       </ul>
+      </div>
+      <div class="feature-card bg-white p-8 rounded-lg shadow-lg">
+       <h3 class="text-2xl font-bold mb-4 text-blue-900">Seamless Integration</h3>
+       <p class="text-gray-700 mb-4">Connect with existing systems and workflows without disruption to operations.</p>
+       <ul class="space-y-2 text-gray-600">
+        <li>✓ API-based connectivity</li>
+        <li>✓ Compatible with major platforms</li>
+        <li>✓ Scalable architecture</li>
+       </ul>
+      </div>
+      <div class="feature-card bg-white p-8 rounded-lg shadow-lg">
+       <h3 class="text-2xl font-bold mb-4 text-blue-900">Analytics Dashboard</h3>
+       <p class="text-gray-700 mb-4">Gain actionable insights through intuitive visualizations and comprehensive reporting.</p>
+       <ul class="space-y-2 text-gray-600">
+        <li>✓ Real-time data visualization</li>
+        <li>✓ Historical trend analysis</li>
+        <li>✓ Custom report generation</li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </section><!-- About Section -->
+   <section id="about" class="w-full bg-white py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+     <h2 class="text-4xl font-bold text-center mb-8 text-gray-800">About The Makers Club</h2>
+     <div class="bg-gradient-to-r from-blue-50 to-green-50 p-8 rounded-lg">
+      <p class="text-lg text-gray-700 mb-6">The Makers Club is dedicated to developing innovative solutions that transform industrial safety. MineSphere represents our commitment to protecting lives through cutting-edge IoT technology.</p>
+      <p class="text-lg text-gray-700 mb-6">Our team combines deep industry expertise with advanced technology to deliver solutions that mining companies can trust. With 24/7 support and continuous innovation, we're your partner in creating safer, more efficient operations.</p>
+      <div class="grid md:grid-cols-3 gap-6 mt-8">
+       <div class="text-center">
+        <div class="text-3xl font-bold text-blue-900 mb-2">
+         24/7
+        </div>
+        <div class="text-gray-600">
+         Customer Support
+        </div>
+       </div>
+       <div class="text-center">
+        <div class="text-3xl font-bold text-blue-900 mb-2">
+         100%
+        </div>
+        <div class="text-gray-600">
+         Compliance
+        </div>
+       </div>
+       <div class="text-center">
+        <div class="text-3xl font-bold text-blue-900 mb-2">
+         Real-Time
+        </div>
+        <div class="text-gray-600">
+         Monitoring
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Contact Section -->
+   <section id="contact" class="w-full bg-gray-800 text-white py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+     <h2 class="text-4xl font-bold text-center mb-12" id="contact-title">Get in Touch</h2>
+     <div class="grid md:grid-cols-2 gap-12">
+      <div>
+       <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+       <div class="space-y-4">
+        <div class="flex items-center gap-3"><span class="text-2xl">📱</span>
+         <div>
+          <div class="font-semibold">
+           Phone
+          </div><a href="tel:0681141745" class="text-green-400 hover:text-green-300">0681141745</a>
+         </div>
+        </div>
+        <div class="flex items-center gap-3"><span class="text-2xl">📧</span>
+         <div>
+          <div class="font-semibold">
+           Email
+          </div><a href="mailto:themakersclubpr@outlook.com" class="text-green-400 hover:text-green-300">themakersclubpr@outlook.com</a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div>
+       <h3 class="text-2xl font-bold mb-6">Request Information</h3>
+       <form id="contact-form" class="space-y-4">
+        <div><label for="name" class="block mb-2 font-semibold">Name</label> <input type="text" id="name" class="w-full px-4 py-2 rounded bg-gray-700 text-white border border-gray-600 focus:border-green-500 focus:outline-none" required>
+        </div>
+        <div><label for="email" class="block mb-2 font-semibold">Email</label> <input type="email" id="email" class="w-full px-4 py-2 rounded bg-gray-700 text-white border border-gray-600 focus:border-green-500 focus:outline-none" required>
+        </div>
+        <div><label for="message" class="block mb-2 font-semibold">Message</label> <textarea id="message" rows="4" class="w-full px-4 py-2 rounded bg-gray-700 text-white border border-gray-600 focus:border-green-500 focus:outline-none" required></textarea>
+        </div><button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded transition-colors">Send Message</button>
+        <div id="form-message" class="text-center text-sm"></div>
+       </form>
+      </div>
+     </div>
+    </div>
+   </section><!-- Footer -->
+   <footer class="w-full bg-gray-900 text-white py-8 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+     <p class="mb-4" id="footer-text">© 2024 The Makers Club - MineSphere. All rights reserved.</p>
+     <p class="text-sm text-gray-400">Transforming mining safety through innovative IoT solutions</p>
+    </div>
+   </footer>
+  </div>
+  <script>
+    const defaultConfig = {
+      background_color: "#1e3a8a",
+      surface_color: "#ffffff",
+      text_color: "#1f2937",
+      primary_action_color: "#22c55e",
+      secondary_action_color: "#3b82f6",
+      font_family: "system-ui",
+      font_size: 16,
+      hero_title: "Your Partner in Safety and Efficiency",
+      hero_subtitle: "Real-time IoT monitoring that transforms mining operations with comprehensive safety insights",
+      cta_button: "Get Started Today",
+      features_title: "Comprehensive Safety Solutions",
+      contact_title: "Get in Touch",
+      footer_text: "© 2024 The Makers Club - MineSphere. All rights reserved."
+    };
+
+    async function onConfigChange(config) {
+      const customFont = config.font_family || defaultConfig.font_family;
+      const baseFontStack = 'system-ui, -apple-system, sans-serif';
+      const baseSize = config.font_size || defaultConfig.font_size;
+      
+      // Apply colors
+      const gradientBg = `linear-gradient(135deg, ${config.background_color || defaultConfig.background_color} 0%, #334155 100%)`;
+      document.querySelectorAll('.gradient-bg').forEach(el => {
+        el.style.background = gradientBg;
+      });
+      
+      document.querySelectorAll('.feature-card').forEach(el => {
+        el.style.backgroundColor = config.surface_color || defaultConfig.surface_color;
+      });
+      
+      document.querySelectorAll('.cta-button').forEach(el => {
+        el.style.backgroundColor = config.primary_action_color || defaultConfig.primary_action_color;
+      });
+      
+      // Apply fonts
+      document.body.style.fontFamily = `${customFont}, ${baseFontStack}`;
+      
+      // Apply font sizes
+      document.getElementById('hero-title').style.fontSize = `${baseSize * 3.125}px`;
+      document.getElementById('hero-subtitle').style.fontSize = `${baseSize * 1.25}px`;
+      document.getElementById('features-title').style.fontSize = `${baseSize * 2.5}px`;
+      document.querySelectorAll('.feature-card h3').forEach(el => {
+        el.style.fontSize = `${baseSize * 1.5}px`;
+      });
+      document.querySelectorAll('.feature-card p').forEach(el => {
+        el.style.fontSize = `${baseSize}px`;
+      });
+      
+      // Apply text content
+      document.getElementById('hero-title').textContent = config.hero_title || defaultConfig.hero_title;
+      document.getElementById('hero-subtitle').textContent = config.hero_subtitle || defaultConfig.hero_subtitle;
+      document.getElementById('cta-text').textContent = config.cta_button || defaultConfig.cta_button;
+      document.getElementById('features-title').textContent = config.features_title || defaultConfig.features_title;
+      document.getElementById('contact-title').textContent = config.contact_title || defaultConfig.contact_title;
+      document.getElementById('footer-text').textContent = config.footer_text || defaultConfig.footer_text;
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [
+          {
+            get: () => config.background_color || defaultConfig.background_color,
+            set: (value) => {
+              config.background_color = value;
+              window.elementSdk.setConfig({ background_color: value });
+            }
+          },
+          {
+            get: () => config.surface_color || defaultConfig.surface_color,
+            set: (value) => {
+              config.surface_color = value;
+              window.elementSdk.setConfig({ surface_color: value });
+            }
+          },
+          {
+            get: () => config.text_color || defaultConfig.text_color,
+            set: (value) => {
+              config.text_color = value;
+              window.elementSdk.setConfig({ text_color: value });
+            }
+          },
+          {
+            get: () => config.primary_action_color || defaultConfig.primary_action_color,
+            set: (value) => {
+              config.primary_action_color = value;
+              window.elementSdk.setConfig({ primary_action_color: value });
+            }
+          },
+          {
+            get: () => config.secondary_action_color || defaultConfig.secondary_action_color,
+            set: (value) => {
+              config.secondary_action_color = value;
+              window.elementSdk.setConfig({ secondary_action_color: value });
+            }
+          }
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => config.font_family || defaultConfig.font_family,
+          set: (value) => {
+            config.font_family = value;
+            window.elementSdk.setConfig({ font_family: value });
+          }
+        },
+        fontSizeable: {
+          get: () => config.font_size || defaultConfig.font_size,
+          set: (value) => {
+            config.font_size = value;
+            window.elementSdk.setConfig({ font_size: value });
+          }
+        }
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ["hero_title", config.hero_title || defaultConfig.hero_title],
+        ["hero_subtitle", config.hero_subtitle || defaultConfig.hero_subtitle],
+        ["cta_button", config.cta_button || defaultConfig.cta_button],
+        ["features_title", config.features_title || defaultConfig.features_title],
+        ["contact_title", config.contact_title || defaultConfig.contact_title],
+        ["footer_text", config.footer_text || defaultConfig.footer_text]
+      ]);
+    }
+
+    // Initialize SDK
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+
+    // Form handling
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      
+      // Create email content
+      const subject = encodeURIComponent('MineSphere Inquiry from ' + name);
+      const body = encodeURIComponent(
+        'Name: ' + name + '\n' +
+        'Email: ' + email + '\n\n' +
+        'Message:\n' + message
+      );
+      
+      // Open email client with pre-filled content
+      const mailtoLink = 'mailto:themakersclubpr@outlook.com?subject=' + subject + '&body=' + body;
+      window.open(mailtoLink, '_blank');
+      
+      // Show success message
+      const messageDiv = document.getElementById('form-message');
+      messageDiv.textContent = 'Opening your email client to send the message...';
+      messageDiv.style.color = '#22c55e';
+      
+      this.reset();
+      
+      setTimeout(() => {
+        messageDiv.textContent = '';
+      }, 5000);
+    });
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a8abc3d37cfa148',t:'MTc2NDg0NTM0Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
